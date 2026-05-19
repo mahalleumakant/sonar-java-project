@@ -3,9 +3,9 @@ node {
     checkout scm
   }
   stage('SonarQube Analysis') {
-    def mvn = tool 'myMaven';
+    def scannerHome = tool 'SonarScanner';
     withSonarQubeEnv() {
-      sh "${mvn}/bin/mvn clean verify sonar:sonar -Dsonar.projectKey=myproject"
+      sh "${scannerHome}/bin/sonar-scanner"
     }
   }
 }
