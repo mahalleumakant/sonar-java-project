@@ -9,8 +9,8 @@ node {
         def scannerHome = tool 'mySonar'
 
         withEnv([
-            'SONAR_HOST_URL=http://54.237.245.52:9000',
-            'SONAR_TOKEN=sqa_560dd47b07cde50e010734d065f7a193ddadc43a'
+            'SONAR_HOST_URL=http://34.204.13.203:9000/',
+            'SONAR_TOKEN=sqa_4d55cb8e391f0fed55c794d4820bcf743aaacdb9'
         ]) {
 
             sh """
