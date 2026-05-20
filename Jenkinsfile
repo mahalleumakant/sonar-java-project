@@ -15,8 +15,8 @@ node {
 
             sh """
             ${scannerHome}/bin/sonar-scanner \
-            -Dsonar.projectKey=python \
-            -Dsonar.projectName=python \
+            -Dsonar.projectKey=Pyhelloworld \
+            -Dsonar.projectName=Pyhelloworld \
             -Dsonar.sources=. \
             -Dsonar.host.url=$SONAR_HOST_URL \
             -Dsonar.token=$SONAR_TOKEN
